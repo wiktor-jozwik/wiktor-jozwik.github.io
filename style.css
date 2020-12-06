@@ -1,0 +1,91 @@
+html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #efefef;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+main{
+    text-align: center;
+}
+
+header>h1{
+    color: white;
+    background-color: #222;
+    padding: 10px;
+    border-bottom: 4px solid black;
+}
+
+.reminder{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+#game-container{
+    margin: 20px auto; 
+    width: 420px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box:nth-child(1){
+    border-bottom: 2px solid #333333;
+    border-right: 2px solid #333333;
+}
+
+.box:nth-child(3){
+    border-bottom: 2px solid #333333;
+    border-left: 2px solid #333333;
+}
+
+.box:nth-child(7){
+    border-top: 2px solid #333333;
+    border-right: 2px solid #333333;
+}
+
+.box:nth-child(9){
+    border-top: 2px solid #333333;
+    border-left: 2px solid #333333;
+}
+.box:nth-child(5){
+    outline: 2px solid #333333;
+}
+
+
+
+.box{
+    width: 140px;
+    height: 140px;
+    line-height: 140px; 
+    font-size: 3rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.game-status{
+    margin: 30px 0;
+}
+
+.restart{
+    background-color: #333333;
+}
+
+footer{
+    text-align: center;
+    margin-top: 40px;
+    min-height: 100px;
+    color: white;
+    background-color: #111;
+    padding: 10px;
+    border-top: 3px solid black;
+}
+.creator{
+    padding: 10px 0 ;
+    color: white;
+}
