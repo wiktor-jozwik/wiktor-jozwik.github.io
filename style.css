@@ -10,6 +10,7 @@ html{
   }
 
 main{
+    background-color: #efefef;
     text-align: center;
 }
 
@@ -20,7 +21,7 @@ header>h1{
     border-bottom: 4px solid black;
 }
 
-.reminder{
+.statement{
     font-size: 1.4rem;
     font-weight: bold;
     margin-top: 20px;
@@ -63,12 +64,12 @@ header>h1{
     width: 140px;
     height: 140px;
     line-height: 140px; 
-    font-size: 3rem;
+    font-size: 3.7rem;
     cursor: pointer;
     text-align: center;
 }
 
-.game-status{
+.status{
     margin: 30px 0;
 }
 
@@ -77,9 +78,11 @@ header>h1{
 }
 
 footer{
+    position: fixed;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
     text-align: center;
-    margin-top: 40px;
-    min-height: 100px;
     color: white;
     background-color: #111;
     padding: 10px;

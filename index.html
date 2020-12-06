@@ -11,30 +11,25 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
     <main>
       <header>
         <h1>Simple Tic Tac Toe versus AI</h1>
-        <div class="reminder">Just click on the board</div>
+        <div class="statement">Can you beat the AI? Just click on the board</div>
       </header>
       <div id="game-container">
-          <div id="cell-1" , class="box"></div>
-          <div id="cell-2" , class="box">O</div>
-          <div id="cell-3" , class="box">O</div>
-          <div id="cell-4" , class="box">O</div>
-          <div id="cell-5" , class="box"></div>
-          <div id="cell-6" , class="box">X</div>
-          <div id="cell-7" , class="box">X</div>
-          <div id="cell-8" , class="box">O</div>
-          <div id="cell-9" , class="box">X</div>
+          <div index="0" class="box"></div>
+          <div index="1" class="box"></div>
+          <div index="2" class="box"></div>
+          <div index="3" class="box"></div>
+          <div index="4" class="box"></div>
+          <div index="5" class="box"></div>
+          <div index="6" class="box"></div>
+          <div index="7" class="box"></div>
+          <div index="8" class="box"></div>
       </div>
-      <h4 class="game-status"></h4>
+      <h4 class="status"></h4>
       <button type="button" class="restart btn btn-secondary btn-lg">
         Restart game
       </button>
@@ -43,6 +38,7 @@
       <div class="creator">Created by Wiktor Jóźwik</div>
       <div class="socials"><a href="#">GitHub</a></div>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/AI.js"></script>
   </body>
 </html>
