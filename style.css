@@ -1,4 +1,4 @@
-html {
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -19,7 +19,7 @@ html {
 }
 
 main {
-    padding-bottom: 100px;
+    padding-bottom: 150px;
 }
 
 header > h1 {
@@ -83,20 +83,28 @@ header > h1 {
     margin-top: 50px;
     position: absolute;
     bottom: 0;
-    height: 100px;
+    height: 150px;
     width: 100%;
     text-align: center;
     color: white;
     background-color: #222;
     padding: 10px;
     border-top: 3px solid black;
-    /* transition: transform 0.25s; */
 }
-.footer.is-hidden {
-    transform: translateY(100%);
+
+.socials > * {
+    padding: 0px 5px;
 }
-.footer.is-visible {
-    transform: translateY(0);
+
+.git,
+.mail {
+    color: #eee;
+    font-size: 1.5rem;
+}
+
+.git:hover,
+.mail:hover {
+    color: #888;
 }
 
 .creator {
@@ -111,8 +119,6 @@ header > h1 {
 
     .status {
         font-size: 1.2rem;
-        font-weight: bold;
-        margin-top: 20px;
     }
 
     #game-container {
@@ -129,9 +135,31 @@ header > h1 {
 }
 
 @media only screen and (max-width: 340px) {
+    header > h1 {
+        font-size: 1.5rem;
+    }
+    .status {
+        font-size: 1rem;
+    }
+    main {
+        padding-bottom: 130px;
+    }
+    #footer {
+        height: 130px;
+    }
+
+    .creator,
+    .socials {
+        font-size: 0.9rem;
+    }
+
+    .git,
+    .mail {
+        font-size: 1.3rem;
+    }
+
     #game-container {
         margin: 20px auto 20px auto;
-        /* margin-top: 50px; */
         width: 240px;
     }
 

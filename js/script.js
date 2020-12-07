@@ -50,12 +50,14 @@ function printWinner(msg) {
 }
 
 function restartGame() {
-    board = ['', '', '', '', '', '', '', '', ''];
-    document.querySelectorAll('.box').forEach((e) => {
-        e.innerHTML = '';
-    });
-    document.querySelector('.status').innerHTML = 'Try again';
-    activeGame = true;
+    if (!board.every((val, i, array) => val === array[0])) {
+        board = ['', '', '', '', '', '', '', '', ''];
+        document.querySelectorAll('.box').forEach((e) => {
+            e.innerHTML = '';
+        });
+        document.querySelector('.status').innerHTML = 'Try again';
+        activeGame = true;
+    }
 }
 
 function boxClick(box) {
@@ -97,6 +99,8 @@ let board = ['', '', '', '', '', '', '', '', ''];
 let activeGame = true;
 
 const boxSelected = document.querySelectorAll('.box');
+
+const firstGame = board.every((val, i, array) => val === array[0]);
 
 document.querySelector('.restart').addEventListener('click', restartGame);
 
