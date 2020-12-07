@@ -53,7 +53,7 @@ function restartGame() {
     document.querySelectorAll('.box').forEach((e) => {
         e.innerHTML = '';
     });
-    document.querySelector('.status').innerHTML = '';
+    document.querySelector('.status').innerHTML = 'Try again';
     activeGame = true;
 }
 
@@ -83,9 +83,9 @@ score.set('X', 1);
 score.set('O', -1);
 score.set('TIE', 0);
 
-const winMessage = "Congratulations, you've won";
-const loseMessage = 'Unfortunately the AI is too strong :(';
-const tieMessage = "It's a draw, you are as good as the AI";
+const winMessage = 'Congratulations, you\'ve won';
+const loseMessage = 'Unfortunately the AI is too strong';
+const tieMessage = 'It\'s a draw, you are as good as the AI';
 
 const player = 'X';
 const AI = 'O';
@@ -95,23 +95,6 @@ let activeGame = true;
 
 const boxSelected = document.querySelectorAll('.box');
 
-let restart = document.querySelector('.restart').addEventListener('click', restartGame);
+document.querySelector('.restart').addEventListener('click', restartGame);
 
-let boxes = boxSelected.forEach(e => e.addEventListener('click', boxClick));
-
-console.log(activeGame);
-
-
-
-
-// boxSelected.forEach(box => box.addEventListener('mouseenter', e =>{
-//     if(e.target === ''){
-//         e.target.innerHTML = 'X'
-//     }
-
-// }));
-// boxSelected.forEach(box => box.addEventListener('mouseleave', e =>{
-//     if(e.target === ''){
-//         e.target.innerHTML = 'X'
-//     }
-// }));
+boxSelected.forEach(e => e.addEventListener('click', boxClick));

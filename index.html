@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, scale=0.41, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1" />
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -14,10 +14,11 @@
     
   </head>
   <body>
+    <div id="page-container">
     <main>
       <header>
         <h1>Simple Tic Tac Toe versus AI</h1>
-        <div class="statement">Can you beat the AI? Just click on the board</div>
+        <div class="status">Can you beat the AI? Just click on the board</div>
       </header>
       <div id="game-container">
           <div index="0" class="box"></div>
@@ -30,15 +31,14 @@
           <div index="7" class="box"></div>
           <div index="8" class="box"></div>
       </div>
-      <h4 class="status"></h4>
       <button type="button" class="restart btn btn-secondary btn-lg">
         Restart game
       </button>
     </main>
-    <footer>
+    <footer id="footer">
       <div class="creator">Created by Wiktor Jóźwik</div>
       <div class="socials"><a href="https://github.com/wiktor-jozwik">GitHub</a></div>
-    </footer>
+    </footer></div>
     <script src="js/script.js"></script>
     <script src="js/AI.js"></script>
   </body>
