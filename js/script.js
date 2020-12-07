@@ -16,6 +16,7 @@ function checkIfEndOfGame(skipMessage) {
     ];
     for (let i = 0; i < 8; i++) {
         const winCombination = winCombinations[i];
+
         if (
             equals3(
                 board[winCombination[0]],
@@ -60,7 +61,9 @@ function restartGame() {
 function boxClick(box) {
     const boxClicked = box.target;
     const boxNum = parseInt(boxClicked.getAttribute('index'));
+
     if (!activeGame) return;
+
     if (board[boxNum] === '') {
         if (currentPlayer === player) {
             boxClicked.innerHTML = currentPlayer;
@@ -83,9 +86,9 @@ score.set('X', 1);
 score.set('O', -1);
 score.set('TIE', 0);
 
-const winMessage = 'Congratulations, you\'ve won';
+const winMessage = "Congratulations, you've won";
 const loseMessage = 'Unfortunately the AI is too strong';
-const tieMessage = 'It\'s a draw, you are as good as the AI';
+const tieMessage = "It's a draw, you are as good as the AI";
 
 const player = 'X';
 const AI = 'O';
@@ -97,4 +100,4 @@ const boxSelected = document.querySelectorAll('.box');
 
 document.querySelector('.restart').addEventListener('click', restartGame);
 
-boxSelected.forEach(e => e.addEventListener('click', boxClick));
+boxSelected.forEach((e) => e.addEventListener('click', boxClick));
